@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 2px;
+      padding: 0;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .green {
+      background-color: green;
+      width: 100%; 
+      height: 130px;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    .blue {
+      background-color: blue;
+      width: 100%; 
+      height: 100px;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    .gray {
+      background-color: #ddd;
+      width: 100%; 
+      height: 70px;
+      padding: 10px;
+      text-align: center;
+      color: black;
+    }
+
+    @media screen and (min-width: 480px) {
+      .gray {
+        width: 23%; 
+      }
+      .blue {
+        width: 30%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .gray {
+        width: 48%; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h2>Responsive Layout</h2>
+
+<div class="green">
+  <p>Column 1 (Green)</p>
+</div>
+
+<div class="row">
+  <div class="blue" style="background-color:blue;">
+    <p>Column 2 (Blue)</p>
+  </div>
+
+  <div class="blue" style="background-color:blue;">
+    <p>Column 3 (Blue)</p>
+  </div>
+
+  <div class="blue" style="background-color:blue;">
+    <p>Column 4 (Blue)</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="gray" style="background-color:#ddd;">
+    <p>Column 5 (Gray)</p>
+  </div>
+
+  <div class="gray" style="background-color:#ddd;">
+    <p>Column 6 (Gray)</p>
+  </div>
+
+  <div class="gray" style="background-color:#ddd;">
+    <p>Column 7 (Gray)</p>
+  </div>
+
+  <div class="gray" style="background-color:#ddd;">
+    <p>Column 8 (Gray)</p>
+  </div>
+</div>
+
+</body>
+</html>
